@@ -218,13 +218,7 @@
   background-color: rgb(4, 4, 34);
   padding: 5px;
   border-radius: 100%;
-  /* padding-bottom: 20px; */
   filter: grayscale(0.35);
-  /* border-top-left-radius: 20px;
-  border-top-right-radius: 20px; */
-  /* border-bottom-right-radius: 90px; */
-  
-
 }
 .hire-me{
   margin-top: 20px;
@@ -292,7 +286,6 @@ font-family: 'Montserrat Alternates', sans-serif;
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
-  
 }
 .project{
   background: black;
@@ -301,7 +294,6 @@ font-family: 'Montserrat Alternates', sans-serif;
   text-transform: capitalize;
   flex: 1 1 200px;
   transition: 0.4s;
-
 }
 .project:hover{
   transform: scale(0.96);
@@ -310,17 +302,18 @@ font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .project-img {
-  /* display: grid;
+  display: grid;
   grid-template-columns: repeat(auto-fit,minmax(220px,auto));
   justify-content: center;
-  align-content: center;*/
-   position: relative; 
-   display: flex;
+  align-content: center;
+  position: relative; 
+  /* object-fit: contain; */
    flex-wrap: wrap;
    flex: 1 1 200px;
    justify-content: center;
    text-align: center;
    align-items: center;
+ 
 }
 h2{
 
@@ -329,8 +322,10 @@ h2{
   font-weight: 700;
 }
 img{
-  height: 35vh;
+  height: 40vh;
   width: 100%;
+  /* object-fit: cover; */
+  
 }
 
 .project-top {
@@ -363,15 +358,12 @@ img{
 .first{
   display: flex;
   flex-wrap: wrap;
-  flex: 1 1 200px;
+  flex: 1 1 100px;
   justify-content: center;
   text-align: center;
-  align-items: center;
-  gap: 5px;
-  margin: auto;
+  /* align-items: center; */
+  gap: 7px;
   width: 100%;
-  padding: 10px;
-  /* min-height: 50vh; */
 }
 .first:hover{
   box-shadow: 1px 3px 5px rgba(0, 0, 0,0.1);
@@ -379,10 +371,16 @@ img{
 .first-img{
   padding: 10px 10px 30px 10px ;
   padding-bottom: 0;
-  min-height: 40vh;
+  min-height: 47vh;
   width: 100%;
   background-color: #241016;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,auto));
+  /* justify-content: center; */
+  /* align-content: center; */
   object-fit: contain;
+  
+
 }
 .one{
   text-align: center;
