@@ -5,6 +5,7 @@ import Certificate from './Certificate';
 import Contact from './Contact';
 import Skills from './Skills';
 
+
 function App() {
   
   return (

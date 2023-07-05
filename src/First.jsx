@@ -13,7 +13,7 @@ const First = (obj) => {
                     
                     <article className="first" key={item.id}>        
                         <div className="first-img">
-                            <img src={`src/${item.pic}`} alt="" />
+                            <img src={item.pic} alt="" />
                         </div>
                         <div>
                         <h6 className="one">{item.name}</h6>

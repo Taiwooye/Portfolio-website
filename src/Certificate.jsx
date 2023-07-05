@@ -1,16 +1,10 @@
-
 // import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import Miles from './images/Miles.png';
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 
 const Certificate = () => {
      
     return (  
-        
-      
        <div className="user1">
-    
         <main >
             <h1>I'm a professional software developer.</h1>
 

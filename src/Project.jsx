@@ -15,14 +15,11 @@ const Project = ({lists}) => {
            <h2>Latest Projects</h2>
 
         <div className="list">
-
             {
                 lists.map((item) =>{
-
-            return (<article className="project" key={item.id}>
-               
+            return (<article className="project" key={item.id}>  
              <div className="project-img" onClick={()=> setClick(item.id)}>
-               <img src={`src/${item.images}` } alt="" />
+               <img src={item.images} alt="" />
              <div>
                <h6 className="project-top">{item.work}</h6>
                <p className="project-info">{item.number}</p>
