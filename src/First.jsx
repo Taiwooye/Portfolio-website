@@ -6,19 +6,20 @@ const First = (obj) => {
 
     return ( 
         
-        <div className="first">        
+        <div className="list">        
             
             {obj.one[passID].map(item => {
                 return (
                     
                     <article className="first" key={item.id}>        
                         <div className="first-img">
-                            <img src={item.pic} alt="" />
-                        </div>
-                        <div>
+                            <img src={item.pic} alt="" className="first-pic" />
+                            </div>
+                       <div>
                         <h6 className="one">{item.name}</h6>
                           <a href={item.link} className="one-link" target="blank">{item.link}</a>
                         </div>
+                       
                         </article> 
              );
             })}             

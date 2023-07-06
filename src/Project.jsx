@@ -22,7 +22,7 @@ const Project = ({lists}) => {
                <img src={item.images} alt="" />
              <div>
                <h6 className="project-top">{item.work}</h6>
-               <p className="project-info">{item.number}</p>
+               {/* <p className="project-info">{item.number}</p> */}
               </div>            
               </div> 
                   
