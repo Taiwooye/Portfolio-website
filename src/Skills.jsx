@@ -2,8 +2,6 @@
 import { faUserCheck} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-
-
 const Skills = () => {
     
     return ( 

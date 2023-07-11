@@ -2,15 +2,13 @@ import { faEnvelope} from "@fortawesome/free-solid-svg-icons";
 import { faPhone} from "@fortawesome/free-solid-svg-icons";
 import { faComment} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import  { useState } from 'react';
+import  { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
 
 const Contact = () => {
  
-    const [formData, setFormData] = useState({
-      name: '',
-      email: '',
-      message: '',
-    });
+    const [formData, setFormData] = useState({});
   
     const handleInputChange = (e) => {
       setFormData({
@@ -18,19 +16,26 @@ const Contact = () => {
         [e.target.name]: e.target.value
       });
     };
+ 
   
-    const handleSubmit = (e) => {
+    const form = useRef();
+    const sendEmail = (e) => {
       e.preventDefault();
-      // Perform form submission logic here, such as sending data to a server
   
-      // Reset form after submission
-      setFormData({
-        name: '',
-        email: '',
-        message: ''
-      });
+      emailjs.sendForm(
+        'service_490ig48',
+       'template_eajs9lq',
+         form.current, 
+        '0VTk_WNo6IjNdrvyN'
+        )
+        .then((result) => {
+          alert('message sent successfully, Thanks for getting in touch')
+            console.log(result.text);
+            
+        }, (error) => {
+            console.log(error.text);
+        });
     };
-  
     return (
     <div className="email">
            <div className="contact-text">
@@ -60,12 +65,12 @@ const Contact = () => {
        <div className="contact">
         <h3>DROP ME A MESSAGE</h3>
         
-        <form onSubmit={handleSubmit}>
+        <form ref={form} onSubmit={sendEmail}>
           <label htmlFor="name">Name:</label>
           <input
             type="text"
             id="name"
-            name="name"
+            name="user_name"
             value={formData.name}
             onChange={handleInputChange}
             placeholder="Enter your name"
@@ -76,7 +81,7 @@ const Contact = () => {
           <input
             type="email"
             id="email"
-            name="email"
+            name="user_email"
             value={formData.email}
             onChange={handleInputChange}
             placeholder="Enter your email"
@@ -92,8 +97,8 @@ const Contact = () => {
             placeholder="Enter your message"
             rows="5"
             required></textarea>
-          <button>CONTACT ME </button>
-          {/* <input type="submit" value="Submit" /> */}
+          <button type="submit">CONTACT ME </button>
+      
         </form>
         </div>
    
@@ -103,10 +108,3 @@ const Contact = () => {
 
    
 export default Contact;
-    // return ( 
-    //     <div className="contact">
-    //   <a href="https://mail.google.com/mail/u/0/#all"><FontAwesomeIcon icon={faEnvelope} /> Email Address</a>
-    //     <p><FontAwesomeIcon icon={faPhone} />  (234) 706-586-8215</p>
-    //     <a href="https://www.linkedin.com/in/oyedokun-taiwo-20670a1b9/">LinkedIn</a>
-    //     </div>
-    //  );

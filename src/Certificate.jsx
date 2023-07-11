@@ -1,5 +1,6 @@
-// import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+
 import Miles from './images/Miles.png';
+
 
 const Certificate = () => {
      
@@ -28,6 +29,7 @@ const Certificate = () => {
        
         <img className='picture' src={Miles} alt="" />
         </div>
+
 
        </div>
        

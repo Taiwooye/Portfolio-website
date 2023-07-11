@@ -1,6 +1,5 @@
 import First from "./First";
 import PropTypes from "prop-types";
-// import code from './images/qr.png';
 import cinema from './images/cinema.png';
 import phone from './images/phone.png';
 import spring from './images/spring.png';
@@ -55,7 +54,7 @@ const Demo1 = ({linkClicked}) => {
     return ( 
         <div className="demo">
              <h2 className="title">{Title[linkClicked]}</h2>
-             
+            
             <First one={obj} myID={linkClicked} />
         </div>
      );
