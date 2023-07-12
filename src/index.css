@@ -11,11 +11,11 @@
 
 .navbar {
   background: rgb(29, 131, 159);
-  height: 77px;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
   position: sticky;
   top: 0;
   z-index: 999;
@@ -24,11 +24,11 @@
 
 .navbar-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  /* height: 50px; */
-  padding: 2px;
-  min-width: 100%;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
 }
 
 .navbar-logo {
@@ -61,7 +61,8 @@
 }
 
 .nav-item {
-  height: 80px;
+  /* height: 80px; */
+  margin-right: 20px;
 }
 
 .nav-links {
@@ -97,10 +98,12 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 50px;
-    left: -120%;
+    top: 100px;
+    left: -100%;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
     transition: all 0.5s ease;
-    
   }
 
   .nav-menu.active {
@@ -205,8 +208,6 @@
 
 .image {
   width: 30%;
-  /* height: 50vh; */
-  /* background-color: rgb(4, 4, 34); */
   padding: 5px;
   border-radius: 100%;
   filter: grayscale(0.35);
@@ -298,31 +299,13 @@ font-family: 'Montserrat Alternates', sans-serif;
   transform: scale(0.96);
 }
 
-/* .project-img {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(220px,auto));
-  justify-content: center;
-  align-content: center;
-  position: relative; 
-   flex-wrap: wrap;
-   flex: 1 1 200px;
-   justify-content: center;
-   text-align: center;
-   align-items: center;
-   border-radius: 25px;
-   
-} */
 h2{
   font-family: 'Montserrat Alternates', sans-serif;
   text-align: center;
   padding-top: 30px;
   font-weight: 900;
 }
-/* .project-images{
-  height: 40vh;
-  width: 100%;
-  border-radius: 25px;
-} */
+
 .first-pic{
   height: 40vh;
   width: 100%;
@@ -500,7 +483,7 @@ font-family: 'Roboto Mono', monospace; */
 }
 
 .picture{
-  background-color: rgb(23, 192, 192);
+  background: rgb(29, 131, 159);
   width: 100%;
   height: auto;
   border-top-left-radius: 140px;
