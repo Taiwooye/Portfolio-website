@@ -97,7 +97,7 @@ const Contact = () => {
             placeholder="Enter your message"
             rows="5"
             required></textarea>
-          <button type="submit">CONTACT ME </button>
+          <button type="submit" className="button">CONTACT ME </button>
       
         </form>
         </div>

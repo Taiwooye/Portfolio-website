@@ -287,8 +287,7 @@ font-family: 'Montserrat Alternates', sans-serif;
   text-transform: capitalize;
   flex: 1 1 200px;
   transition: 0.4s;
-  padding: 0.8rem;
-
+  /* padding: 0.8rem; */
 }
 .param{
   color: grey;
@@ -300,7 +299,7 @@ font-family: 'Montserrat Alternates', sans-serif;
   transform: scale(0.96);
 }
 
-.project-img {
+/* .project-img {
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(220px,auto));
   justify-content: center;
@@ -311,19 +310,20 @@ font-family: 'Montserrat Alternates', sans-serif;
    justify-content: center;
    text-align: center;
    align-items: center;
-
-}
+   border-radius: 25px;
+   
+} */
 h2{
   font-family: 'Montserrat Alternates', sans-serif;
   text-align: center;
   padding-top: 30px;
   font-weight: 900;
 }
-.project-images{
+/* .project-images{
   height: 40vh;
   width: 100%;
   border-radius: 25px;
-}
+} */
 .first-pic{
   height: 40vh;
   width: 100%;
@@ -331,31 +331,49 @@ h2{
 }
 
 .project-top {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0;
-  background: black;
-  border-bottom-right-radius: 1rem;
   font-size: 0.5rem;
   text-align: center;
-  padding: 15px;
-
+  padding: 30px;
+  width: 100%;
+  justify-content: space-around;
+  display: flex;
 }
 .project-top{
   margin-bottom: 0;
-  font-size: 0.8rem;
-  font-weight: 300;
-  background-color: black;
+  font-size: 1.5rem;
+  padding: 30px 60px;
+  position: relative;
+  /* background: linear-gradient(to top, #2e61e3, #12047a); */
+  cursor: pointer;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 700;
   color: white;
+  background-color: white;
+  border-color: rgb(213, 211, 211);
+  color: black;
+  box-shadow: 10px 5px 5px rgb(165, 165, 164);
 }
-.project-info{
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  text-align: center;
-  padding: 10px;
-  font-size: 1.2rem;
+.active{
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  padding: 30px 60px;
+  border: none;
+  outline: none;
+  position: relative;
+ /* background: linear-gradient(to top, #2e61e3, #12047a); */
+ background-color: rgb(29, 131, 159);
+  cursor: pointer;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 700;
+  color: white;
+  /* background-color: white;
+  border-color: linear-gradient(red, yellow,green, blue);
+  color: black; */
 }
+
 
 .first{
   text-align: center;
@@ -363,7 +381,7 @@ h2{
   flex: 1 1 200px;
   transition: 0.4s;
   padding-bottom: 20px;
-   box-shadow: 4px 5px 10px #d6cece;
+  box-shadow: 10px 5px 5px rgb(165, 165, 164);
  
    /* border-radius: 43px; */
 }
@@ -727,7 +745,7 @@ textarea {
   font-family: 'Montserrat Alternates', sans-serif;
 }
 
-button{
+.button{
   background: rgb(29, 131, 159);
   font-family: 'Montserrat Alternates', sans-serif;
   color: #fff;
@@ -738,3 +756,8 @@ button{
   width: 25%;
   cursor: pointer;
 } 
+.button:active{
+  transform: scale(0.96);
+  background-color: rgba(107, 121, 169, 0.433);
+  color: black;
+}

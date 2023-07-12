@@ -1,36 +1,62 @@
 import PropTypes from "prop-types";
 import Demo1 from './Demo1';
 import { useState } from "react";
+import { FaHtml5, FaBootstrap, FaReact, FaJs } from "react-icons/fa";
 
 const Project = ({lists}) => {
 
     const[link, setLink] = useState(1);
+    const[selectLink, setSelectLink] = useState("Html/Css");
 
     const setClick = (param) => {
 
             setLink(param);
     };
+
+    const myIcon = (icon) => {      
+
+        if(icon == "React.js"){
+          return <FaReact />
+        }
+        else if(icon == "Html/Css"){
+          return <FaHtml5 />
+        }
+
+        else if(icon == "Javascript"){
+          return <FaJs />
+        }
+        else if(icon == "Boostrap"){
+          return <FaBootstrap />
+        }
+    }
+
     return ( 
         <>
            <h2>Latest-Projects</h2>
            
-            <p className="param">Click on images to display various projects below</p>
+            <p className="param">Click on button to display various projects below</p>
       
         <div className="list">
             {
                 lists.map((item) =>{
             return (<article className="project" key={item.id}>  
              <div className="project-img" onClick={()=> setClick(item.id)}>
-               <img src={item.images} alt="" className="project-images"/>
-             <div>
-               <h6 className="project-top">{item.work}</h6>
+             <button className={`project-top ${item.work == selectLink ? 'active' : ''}`}
+             onClick={()=>setSelectLink(item.work)}
+             >{myIcon(item.work)} {item.work} </button>
+                 {/* <h6 className="project-icon">{myIcon(item.work)}</h6>   */}
+              
+               {/* <img src={item.images} alt="" className="project-images"/>
+              */}
+             {/* <div> */}
+             
                {/* <p className="project-info">{item.number}</p> */}
-              </div>   
-                
+              {/* </div>    */}
+           
               </div> 
-                  
+             
            </article>);            
-                
+           
           })
             }
            
