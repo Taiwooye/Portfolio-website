@@ -16,26 +16,26 @@ const Project = ({lists}) => {
     const myIcon = (icon) => {      
 
         if(icon == "React.js"){
-          return <FaReact />
+          return <FaReact id="icon" />
         }
         else if(icon == "Html/Css"){
-          return <FaHtml5 />
+          return <FaHtml5 id="icon"  />
         }
 
         else if(icon == "Javascript"){
-          return <FaJs />
+          return <FaJs id="icon"  />
         }
         else if(icon == "Boostrap"){
-          return <FaBootstrap />
+          return <FaBootstrap id="icon" />
         }
     }
 
     return ( 
         <>
-           <h2>Latest-Projects</h2>
+           <h2 className="param">My-Skill-Set</h2>
            
-            <p className="param">Click on button to display various projects below</p>
-      
+            {/* <p className="param">Click on button to display various projects below</p>
+       */}
         <div className="list">
             {
                 lists.map((item) =>{

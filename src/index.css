@@ -185,8 +185,8 @@
   border-bottom: 1px solid #d6cece;
   display: flex;
   justify-content: space-around;
-  /* padding: 20px;
-   */
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 .about:hover{
   box-shadow: 1px 3px 5px rgba(0, 0, 0,0.1);
@@ -205,7 +205,7 @@
 
 .image {
   width: 30%;
-  height: 50vh;
+  /* height: 50vh; */
   /* background-color: rgb(4, 4, 34); */
   padding: 5px;
   border-radius: 100%;
@@ -290,7 +290,6 @@ font-family: 'Montserrat Alternates', sans-serif;
   /* padding: 0.8rem; */
 }
 .param{
-  color: grey;
   text-align: center;
   padding-bottom: 30px;
   font-family: 'Montserrat Alternates', sans-serif;
@@ -373,7 +372,9 @@ h2{
   border-color: linear-gradient(red, yellow,green, blue);
   color: black; */
 }
-
+#icon{
+font-size: 1.5em;
+} 
 
 .first{
   text-align: center;
