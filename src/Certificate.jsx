@@ -1,6 +1,4 @@
-
 import Miles from './images/Miles.png';
-
 
 const Certificate = () => {
      

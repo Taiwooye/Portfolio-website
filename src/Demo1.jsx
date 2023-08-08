@@ -12,6 +12,7 @@ import cart from './images/cart.png';
 import quote from './images/quote.png';
 import phonebook from './images/phonebook.png';
 import hotel from './images/hotel.png';
+import amazon from './images/amazon.png';
 import portfolio from './images/portfolio.png'
 
 
@@ -46,7 +47,8 @@ const Demo1 = ({linkClicked}) => {
             ],
             4: [
                 {name: 'Book-Resort', pic:hotel, id:1, link:'https://book-resort.vercel.app'},
-                { name: 'Portfolio', pic:portfolio, id:2, link: 'https://portfolio-website-cyan-rho.vercel.app/'},
+                { name: 'Portfolio', pic:portfolio, id:2, link: 'https://portfolio-website-cyan-rho.vercel.app'},
+                { name: 'Amazon-clone', pic:amazon, id:3, link: 'https://amazon-clone-mu-six.vercel.app/'},
             ]
 
         };
