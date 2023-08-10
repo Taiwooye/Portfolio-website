@@ -1,6 +1,6 @@
 import First from "./First";
 import PropTypes from "prop-types";
-import cinema from './images/cinema.png';
+import glass from './images/glass.png';
 import phone from './images/phone.png';
 import spring from './images/spring.png';
 import sign from './images/sign-in.png';
@@ -29,10 +29,10 @@ const Demo1 = ({linkClicked}) => {
         const obj = {
             1: [
                 // {  name: 'Qr-Code', pic:code, id:1,link:'https://qr-code-akm4.vercel.app'},
-                {  name: 'Cinema', pic:cinema, id:2,  link:'https://cinema-ruby.vercel.app'},
-                {  name: 'Phone-font', pic:phone, id:3, link:'https://desktop-font.vercel.app' },
-                {  name: 'Spring.io', pic:spring, id:4, link:'https://spring-delta.vercel.app' },
-                {  name: 'Sign-in', pic:sign, id:5, link:'https://sign-in-page-blond.vercel.app' },
+                {  name: 'glassmorphism', pic:glass, id:1,  link:'https://glassmorphism-work.vercel.app/'},
+                {  name: 'Phone-font', pic:phone, id:2, link:'https://desktop-font.vercel.app' },
+                {  name: 'Spring.io', pic:spring, id:3, link:'https://spring-delta.vercel.app' },
+                {  name: 'Sign-in', pic:sign, id:4, link:'https://sign-in-page-blond.vercel.app' },
             ],
             2: [
                 { name: 'Watch', pic:company, id:1, link:'https://watch-boostrap.vercel.app'},
