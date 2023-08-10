@@ -2,9 +2,8 @@ import First from "./First";
 import PropTypes from "prop-types";
 import glass from './images/glass.png';
 import phone from './images/phone.png';
-import spring from './images/spring.png';
+import respon from './images/respon.png';
 import sign from './images/sign-in.png';
-import company from './images/company.png';
 import nft from './images/nft.png';
 import foodie from './images/foodie.png';
 import movie from './images/movie.png';
@@ -31,11 +30,10 @@ const Demo1 = ({linkClicked}) => {
                 // {  name: 'Qr-Code', pic:code, id:1,link:'https://qr-code-akm4.vercel.app'},
                 {  name: 'glassmorphism', pic:glass, id:1,  link:'https://glassmorphism-work.vercel.app/'},
                 {  name: 'Phone-font', pic:phone, id:2, link:'https://desktop-font.vercel.app' },
-                {  name: 'Spring.io', pic:spring, id:3, link:'https://spring-delta.vercel.app' },
-                {  name: 'Sign-in', pic:sign, id:4, link:'https://sign-in-page-blond.vercel.app' },
+                {  name: 'Sign-in', pic:sign, id:3, link:'https://sign-in-page-blond.vercel.app' },
             ],
             2: [
-                { name: 'Watch', pic:company, id:1, link:'https://watch-boostrap.vercel.app'},
+                { name: 'Simple Responsive Web', pic:respon, id:1, link:'https://responsive-show-house.vercel.app/'},
                 {name: 'Nft-website', pic:nft, id:2,  link:'https://nft-dusky-xi.vercel.app'},
                 {name: 'Foodie', pic:foodie, id:3,  link:'https://foodie-6og9.vercel.app'},
             ],
