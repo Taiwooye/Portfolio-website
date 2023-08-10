@@ -5,7 +5,7 @@ import phone from './images/phone.png';
 import respon from './images/respon.png';
 import sign from './images/sign-in.png';
 import nft from './images/nft.png';
-import foodie from './images/foodie.png';
+import goods from './images/goods.png';
 import movie from './images/movie.png';
 import cart from './images/cart.png';
 import quote from './images/quote.png';
@@ -35,7 +35,7 @@ const Demo1 = ({linkClicked}) => {
             2: [
                 { name: 'Simple Responsive Web', pic:respon, id:1, link:'https://responsive-show-house.vercel.app/'},
                 {name: 'Nft-website', pic:nft, id:2,  link:'https://nft-dusky-xi.vercel.app'},
-                {name: 'Foodie', pic:foodie, id:3,  link:'https://foodie-6og9.vercel.app'},
+                {name: 'Ad-webpage', pic:goods, id:3,  link:'https://ad-webpage.vercel.app/'},
             ],
             3: [
                 {name: 'Show-Movie', pic:movie, id:1, link:'https://show-movies-with-netflix.vercel.app'},
