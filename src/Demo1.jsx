@@ -13,6 +13,7 @@ import phonebook from './images/phonebook.png';
 import hotel from './images/hotel.png';
 import amazon from './images/amazon.png';
 import portfolio from './images/portfolio.png'
+import new from './images/new.png'
 
 
 
@@ -46,7 +47,7 @@ const Demo1 = ({linkClicked}) => {
             4: [
                 {name: 'Book-Resort', pic:hotel, id:1, link:'https://book-resort.vercel.app'},
                 { name: 'Portfolio', pic:portfolio, id:2, link: 'https://portfolio-website-cyan-rho.vercel.app'},
-                { name: 'Amazon-clone', pic:amazon, id:3, link: 'https://amazon-clone-mu-six.vercel.app/'},
+                { name: 'React-Bg', pic:new, id:3, link: 'https://new-react-mu.vercel.app/'},
             ]
 
         };
