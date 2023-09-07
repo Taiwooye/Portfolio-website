@@ -11,8 +11,8 @@ import cart from './images/cart.png';
 import quote from './images/quote.png';
 import phonebook from './images/phonebook.png';
 import hotel from './images/hotel.png';
-import portfolio from './images/portfolio.png'
-import newpic from './images/new.png'
+import portfolio from './images/portfolio.png';
+import newpic from './images/new.png';
 
 
 
