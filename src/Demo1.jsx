@@ -10,9 +10,9 @@ import movie from './images/movie.png';
 import cart from './images/cart.png';
 import quote from './images/quote.png';
 import phonebook from './images/phonebook.png';
-// import hotel from './images/hotel.png';
-// import portfolio from './images/portfolio.png';
-// import newpic from './images/new.png';
+import hotel from './images/hotel.png';
+import portfolio from './images/portfolio.png';
+import newpic from './images/new.png';
 
 
 
@@ -43,11 +43,11 @@ const Demo1 = ({linkClicked}) => {
                { name: 'Quote', pic:quote,id:3, link: 'https://api-quote-generator.vercel.app'},
                { name: 'Phone-Book', pic:phonebook,id:4, link: 'https://phone-search.vercel.app'},
             ],
-            // 4: [
-            //     {name: 'Book-Resort', pic:hotel, id:1, link:'https://book-resort.vercel.app'},
-            //     { name: 'Portfolio', pic:portfolio, id:2, link: 'https://portfolio-website-cyan-rho.vercel.app'},
-            //     { name: 'React-Bg', pic:newpic, id:3, link: 'https://new-react-mu.vercel.app/'},
-            // ]
+            4: [
+                {name: 'Book-Resort', pic:hotel, id:1, link:'https://book-resort.vercel.app'},
+                { name: 'Portfolio', pic:portfolio, id:2, link: 'https://portfolio-website-cyan-rho.vercel.app'},
+                { name: 'React-Bg', pic:newpic, id:3, link: 'https://new-react-mu.vercel.app/'},
+            ]
 
         };
 
