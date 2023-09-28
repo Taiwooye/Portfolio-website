@@ -33,9 +33,7 @@ const Project = ({lists}) => {
     return ( 
         <>
            <h2 className="param">My-Skill-Set</h2>
-           
-            {/* <p className="param">Click on button to display various projects below</p>
-       */}
+
         <div className="list">
             {
                 lists.map((item) =>{
@@ -44,14 +42,7 @@ const Project = ({lists}) => {
              <button className={`project-top ${item.work == selectLink ? 'active' : ''}`}
              onClick={()=>setSelectLink(item.work)}
              >{myIcon(item.work)} {item.work} </button>
-                 {/* <h6 className="project-icon">{myIcon(item.work)}</h6>   */}
-              
-               {/* <img src={item.images} alt="" className="project-images"/>
-              */}
-             {/* <div> */}
              
-               {/* <p className="project-info">{item.number}</p> */}
-              {/* </div>    */}
            
               </div> 
              
