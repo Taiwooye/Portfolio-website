@@ -41,7 +41,30 @@ const Skills = () => {
                  my knowledge of React allows me to effectively work with other developers and contribute to projects.</p>
                        
            </div>
+      
          </div>
+
+         <div className="skill">
+         <div className="row1">
+         <h3><FontAwesomeIcon icon={faUserCheck}className="icon" />Nextjs</h3>
+               <p>
+Next.js is a popular open-source React framework designed for building web applications with a 
+focus on ease of development, performance, and scalability. Since its release, 
+it has gained significant traction in the
+ web development community due to its thoughtful conventions and powerful features.
+At its core, Next.js leverages React, the widely used JavaScript library for building 
+user interfaces. However, Next.js extends React by providing a structured framework for 
+building applications, complete with server-side rendering (SSR), static site generation 
+(SSG), and an intuitive file-based routing system.
+One of the standout features of Next.js is its emphasis on server-side rendering. 
+SSR allows rendering React components on the server rather than the client, resulting 
+in faster initial page loads and improved search engine optimization (SEO). 
+This is especially crucial for delivering a better user experience and ensuring that web pages are easily discoverable by search engines.
+  </p>
+
+           </div>
+
+          </div>
          
         </>
            

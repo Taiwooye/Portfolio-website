@@ -11,7 +11,7 @@ const Home = () => {
     //about
     const [about, setAbout] = useState(
     {name: 'Oyedokun Taiwo',
-    text: "I'm a professional software developer with",
+    // text: "I'm a professional software developer with",
     id: 1  
     });
 

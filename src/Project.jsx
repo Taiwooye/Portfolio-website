@@ -31,7 +31,7 @@ const Project = ({lists}) => {
           return <FaBootstrap id="icon" />
         }
         else if(icon == "Nextjs"){
-          return <FaN id="icon"/>
+          return <FaN  id="icon"/>
         }
     }
 
@@ -42,21 +42,19 @@ const Project = ({lists}) => {
         <div className="list">
             {
                 lists.map((item) =>{
-            return (<article className="project" key={item.id}>  
+            return (<article className="project"  key={item.id}>  
              <div className="project-img" onClick={()=> setClick(item.id)}>
              <button className={`project-top ${item.work == selectLink ? 'active' : ''}`}
              onClick={()=>setSelectLink(item.work)}
              >{myIcon(item.work)} {item.work} </button>
              
-           
               </div> 
-             
            </article>);            
            
           })
             }
            
-        </div>
+        </div >
 
         <Demo1 linkClicked = {link}/>
         

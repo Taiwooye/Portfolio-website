@@ -75,7 +75,11 @@
   font-size: 15px;
 
 }
-
+.list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .nav-links:hover {
   /* border-bottom: 4px solid #fff; */
   transition: all 0.2s ease-out;
@@ -118,7 +122,6 @@
     text-align: center;
     justify-content: center;
     min-width: 71%;
-   
   }
 
   .nav-links {
@@ -175,6 +178,20 @@
     color: #242424;
     transition: 250ms;
   }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+/* Grid Item Styles */
+.grid-item {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  text-align: center;
 }
 
 .content{
@@ -275,7 +292,7 @@ font-family: 'Montserrat Alternates', sans-serif;
   padding: 7px; 
   font-size: 17px;
   width: 85px;
-   /* display: inline-block; */
+  
 }
 
 /* Projects */
@@ -286,12 +303,14 @@ font-family: 'Montserrat Alternates', sans-serif;
 
 }
 .project{
-  text-align: center;
+ 
+   text-align: center;
   text-transform: capitalize;
   flex: 1 1 200px;
-  transition: 0.4s;
-  /* padding: 0.8rem; */
+  transition: 0.4s; 
+
 }
+
 .param{
   text-align: center;
   padding-bottom: 30px;
@@ -330,7 +349,6 @@ h2{
   font-size: 1.5rem;
   padding: 30px 60px;
   position: relative;
-  /* background: linear-gradient(to top, #2e61e3, #12047a); */
   cursor: pointer;
   font-family: 'Montserrat Alternates', sans-serif;
   font-weight: 700;
@@ -347,15 +365,11 @@ h2{
   border: none;
   outline: none;
   position: relative;
- /* background: linear-gradient(to top, #2e61e3, #12047a); */
  background-color: rgb(29, 131, 159);
   cursor: pointer;
   font-family: 'Montserrat Alternates', sans-serif;
   font-weight: 700;
   color: white;
-  /* background-color: white;
-  border-color: linear-gradient(red, yellow,green, blue);
-  color: black; */
 }
 #icon{
 font-size: 1.5em;
