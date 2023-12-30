@@ -21,6 +21,15 @@ const About = ({info}) => {
                 <br />
                 <button className='javascript'>Javscript</button>
                 <button className='react'>React.js</button>
+                <br />
+                <button style={{backgroundColor:"gray",
+                border:'none',
+                width:'190px',
+                padding:'13px',
+                marginTop:'5px',
+                borderRadius:'5px',
+                fontSize:'17px'
+              }}>Nextjs</button>
             </div>
         
         </div>
@@ -32,7 +41,7 @@ const About = ({info}) => {
 
 About.propTypes = {
     info: PropTypes.object.isRequired,
-    //miles: PropTypes.isRequired
+   
   } 
  
 export default About;

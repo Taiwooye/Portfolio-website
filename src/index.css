@@ -12,6 +12,7 @@
 .navbar {
   background: rgb(29, 131, 159);
   height: 80px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,14 +28,13 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1500px;
   padding: 0 20px;
 }
 
 .navbar-logo {
-  color: white;
+  color: #ffffff;
   justify-self: start;
-  margin-left: 20px;
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;

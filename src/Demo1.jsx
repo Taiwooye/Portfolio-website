@@ -13,6 +13,7 @@ import phonebook from './images/phonebook.png';
 import hotel from './images/hotel.png';
 import portfolio from './images/portfolio.png';
 import newpic from './images/newpic.png';
+import tran from './images/tran.png';
 
 
 
@@ -23,6 +24,7 @@ const Demo1 = ({linkClicked}) => {
             2 : "BOOTSTRAP",
             3 : "JAVASCRIPT",
             4 : "REACT",
+            5: "Nextjs",
         };
 
         const obj = {
@@ -47,8 +49,10 @@ const Demo1 = ({linkClicked}) => {
                 {name: 'Book-Resort', pic:hotel, id:1, link:'https://book-resort.vercel.app'},
                 { name: 'Portfolio', pic:portfolio, id:2, link: 'https://portfolio-website-cyan-rho.vercel.app'},
                 { name: 'React-Bg', pic:newpic, id:3, link: 'https://new-react-mu.vercel.app/'},
+            ],
+            5: [
+                {name: 'TranqBay', pic:tran, id:1, link:'https://tranqbay-frontend.vercel.app'}, 
             ]
-
         };
 
     return ( 

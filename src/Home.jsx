@@ -21,6 +21,7 @@ const Home = () => {
     {work: 'Boostrap', images: '', number:'', id: 2},
     {work: 'Javascript', images: '',number: '', id: 3},
     {work: 'React.js', images: '',number:'', id: 4},
+    {work: 'Next.js', images: '',number:'', id: 5},
     ]);
 
     return ( 

@@ -2,6 +2,8 @@ import PropTypes from "prop-types";
 import Demo1 from './Demo1';
 import { useState } from "react";
 import { FaHtml5, FaBootstrap, FaReact, FaJs } from "react-icons/fa";
+import { FaN } from "react-icons/fa6";
+
 
 const Project = ({lists}) => {
 
@@ -27,6 +29,9 @@ const Project = ({lists}) => {
         }
         else if(icon == "Boostrap"){
           return <FaBootstrap id="icon" />
+        }
+        else if(icon == "Nextjs"){
+          return <FaN id="icon"/>
         }
     }
 

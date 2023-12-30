@@ -9,7 +9,6 @@ import {useState} from "react";
         <>
         <nav className="navbar">
             <div className="navbar-container">
-                {/* <Link to="/ " className="navbar-logo">Miles-Portfolio</Link> */}
                 <a href="/" className="navbar-logo"> Miles-Portfolio</a>
                 <div className="menu-icon" onClick={handleClick}>
                     <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
@@ -37,29 +36,4 @@ import {useState} from "react";
         </>
     )
  }
- 
 export default Navbar;
-
-//     const navRef = useRef();
-
-//     const showNavbar = ()=>{
-//         navRef.current.classList.toggle("responsive_nav"); 
-//     }
-//     return ( 
-//         <header>
-//             <h1><a href="/"> Miles-Portfolio</a></h1>
-//             <nav ref={navRef} >        
-//             <a href="/aboutme">About </a>    
-//             <a href="/skill">My-Skill </a>    
-//              <a href="/contact">Contact </a>    
-//             <button className='nav-btn nav-close-btn' onClick={showNavbar}>
-//                  <FaTimes/>
-//                 </button>
-//                 </nav>
-//            <button className='nav-btn' onClick={showNavbar}>
-//                 <FaBars/> 
-//            </button>
-            
-//         </header>
-      
-//      );
