@@ -224,7 +224,6 @@
   margin-top: 20px;
   font-family: 'Roboto', sans-serif;
 }
-
 .image {
   width: 30%;
   padding: 5px;
@@ -245,10 +244,11 @@ font-family: 'Montserrat Alternates', sans-serif;
 .hire-me:hover{
   transform: scale(0.90);
 }
+
 .qualification{
   padding-top: 50px;
- 
 }
+
 .html{
     margin-right: 11px;
     padding: 7px; 
@@ -300,10 +300,8 @@ font-family: 'Montserrat Alternates', sans-serif;
   display: flex;
   gap: 25px;
   flex-wrap: wrap;
-
 }
 .project{
- 
    text-align: center;
   text-transform: capitalize;
   flex: 1 1 200px;
@@ -334,20 +332,15 @@ h2{
 }
 
 .project-top {
-  /* position: absolute; */
-  top: 0;
-  left: 0;
-  font-size: 0.5rem;
   text-align: center;
   padding: 30px;
   width: 100%;
   justify-content: space-around;
   display: flex;
+  
 }
 .project-top{
-  margin-bottom: 0;
   font-size: 1.5rem;
-  padding: 30px 60px;
   position: relative;
   cursor: pointer;
   font-family: 'Montserrat Alternates', sans-serif;
@@ -382,8 +375,6 @@ font-size: 1.5em;
   transition: 0.4s;
   padding-bottom: 20px;
   box-shadow: 10px 5px 5px rgb(165, 165, 164);
- 
-   /* border-radius: 43px; */
 }
 .first:hover{
   transform: scale(0.96);

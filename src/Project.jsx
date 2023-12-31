@@ -31,7 +31,7 @@ const Project = ({lists}) => {
           return <FaBootstrap id="icon" />
         }
         else if(icon == "Nextjs"){
-          return <FaN  id="icon"/>
+          return <FaN id="icon"/>
         }
     }
 

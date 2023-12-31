@@ -46,7 +46,7 @@ const Skills = () => {
 
          <div className="skill">
          <div className="row1">
-         <h3><FontAwesomeIcon icon={faUserCheck}className="icon" />Nextjs</h3>
+         <h3><FontAwesomeIcon icon={faUserCheck}className="icon" />NEXTjs</h3>
                <p>
 Next.js is a popular open-source React framework designed for building web applications with a 
 focus on ease of development, performance, and scalability. Since its release, 

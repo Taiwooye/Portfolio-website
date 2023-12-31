@@ -25,7 +25,7 @@ const Certificate = () => {
         </main>
         <div className="sub">
        
-        <img className='picture' src={Miles} alt="" />
+        <img className='picture' src={Miles} alt="miles" />
         </div>
 
 
